@@ -16,3 +16,4 @@ project/plugins/project/
 .idea
 *.eml
 *.iml
+.cache
