@@ -33,4 +33,9 @@ class ImmutabilityTests extends FunSuite with ShouldMatchers {
   test("scala.collection.immutable.List - abstract") {
     assertImmutable(classOf[scala.collection.immutable.List[_]])
   }
+
+  test("non final case class with immutable fields") {
+    MutabilityAssert.assertImmutable(classOf[SomeCaseClass])
+
+  }
 }
